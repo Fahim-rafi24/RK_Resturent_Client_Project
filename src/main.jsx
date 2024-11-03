@@ -10,6 +10,6 @@ import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div>Welcome Here</div>
+    <div className='flex justify-center text-4xl items-center w-full h-[100vh]'>Welcome Here</div>
   </StrictMode>,
 )
