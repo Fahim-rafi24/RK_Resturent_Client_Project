@@ -39,8 +39,6 @@
     /* Other background properties */
     background-size: cover;
     background-position: center;
-    /* Other styles */
-    font-family: sans-serif;
 }
 
 
@@ -50,7 +48,13 @@
     /* Other background properties */
     background-size: cover;
     background-position: center;
-    /* Other styles */
-    font-family: sans-serif;
     filter: grayscale(25%);
+}
+
+
+
+/* form Img */
+.formBg {
+    /* Replace this with the path to your image file    --featured.jpg */
+    background-image: url('./assets/Form.png');
 }

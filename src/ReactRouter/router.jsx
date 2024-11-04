@@ -3,6 +3,7 @@ import Root from "../Root";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Form/Login/Login";
+import Register from "../Pages/Form/Register/Register";
 
 
 
@@ -27,7 +28,7 @@ const routerPath = createBrowserRouter([
     },
     {
         path: "/register",
-        element: <div>Register comming...</div>,
+        element: <Register></Register>,
     },
 ]);
 
