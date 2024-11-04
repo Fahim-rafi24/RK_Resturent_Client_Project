@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+.aws-btn{
+    --button-primary-color-light: #ffffff;
+}
