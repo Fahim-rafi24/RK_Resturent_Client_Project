@@ -1,5 +1,6 @@
 import RoyelDivBar from "../../CommonThink/RoyelDivBar/RoyelDivBar";
 import HomeBanner from "../../Components/Banner/HomeBanner";
+import HomeSwiper from "../../Components/Swiper/HomeSwiper";
 
 
 
@@ -13,6 +14,8 @@ export default function Home() {
                 header={'ORDER ONLINE'}
                 border={''}>
             </RoyelDivBar>
+            {/* Food Swiper */}
+            <HomeSwiper></HomeSwiper>
         </>
     )
 }

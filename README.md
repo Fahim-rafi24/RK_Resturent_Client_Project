@@ -9,4 +9,5 @@ Here use helping Components :-
 04. react-awesome-button
 05. react-icons
 06. react-responsive-carousel
-07. 
+07. swiper-js
+08. 

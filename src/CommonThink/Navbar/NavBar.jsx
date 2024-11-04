@@ -37,7 +37,7 @@ export default function NavBar() {
                     </ul>
                 </div>
                 <Link to={'/'}
-                    className="btn btn-ghost text-base text-purple-400 md:text-4xl">RK Resturent®️</Link>
+                    className="btn btn-ghost text-base font-bold text-purple-400 md:text-4xl cinzel">RK Resturent ®️</Link>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
