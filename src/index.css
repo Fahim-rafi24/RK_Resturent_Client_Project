@@ -24,7 +24,22 @@
 
 
 /* nav bar active class */
-.active{
+.active {
     background-color: rgba(178, 178, 179, 0) !important;
     color: #1950f6 !important;
+}
+
+
+
+
+/* shef_hand bg Img */
+.shef_hand {
+    /* Replace this with the path to your image file */
+    background-image: url('./assets/HomeBanner/chef-service.jpg');
+    /* Other background properties */
+    background-size: cover;
+    background-position: center;
+    /* Other styles */
+    font-family: sans-serif;
+    color: #333;
 }

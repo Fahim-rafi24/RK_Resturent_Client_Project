@@ -15,32 +15,37 @@ import slide5 from "../../assets/HomeBanner/slide5.jpg"
 
 export default function HomeSwiper() {
     return (
-        <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
-            pagination={{
-                clickable: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper max-w-[1100px] mx-auto px-5 my-20">
+            <Swiper
+                slidesPerView={3}
+                spaceBetween={30}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper cinzel">
 
-            {/* all img */}
+                {/* all img */}
 
-            <SwiperSlide>
-                <img src={slide1} alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-            <img src={slide2} alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-            <img src={slide3} alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-            <img src={slide4} alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-            <img src={slide5} alt="" />
-            </SwiperSlide>
-        </Swiper>
+                <SwiperSlide>
+                    <img src={slide1} />
+                    <p className='ml-4 text-yellow-400 font-bold text-xl md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Salads</p>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide2} />
+                    <p className='ml-4 text-yellow-400 font-bold text-xl md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Pizzas</p>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide3} />
+                    <p className='ml-4 text-yellow-400 font-bold text-xl md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Soups</p>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide4} />
+                    <p className='ml-4 text-yellow-400 font-bold text-xl md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Cakes</p>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide5} />
+                    <p className='ml-4 text-yellow-400 font-bold text-xl md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Salad</p>
+                </SwiperSlide>
+            </Swiper>
     )
 }

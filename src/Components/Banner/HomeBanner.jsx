@@ -12,22 +12,22 @@ import img6 from "../../assets/HomeBanner/06.png";
 export default function HomeBanner() {
     return (
         <Carousel>
-            <div>
+            <div className="brightness-75">
                 <img src={img1} className="" />
             </div>
-            <div>
+            <div className="brightness-75">
                 <img src={img2} />
             </div>
-            <div>
+            <div className="brightness-75">
                 <img src={img3} />
             </div>
-            <div>
+            <div className="brightness-75">
                 <img src={img4} />
             </div>
-            <div>
+            <div className="brightness-75">
                 <img src={img5} />
             </div>
-            <div>
+            <div className="brightness-75">
                 <img src={img6} />
             </div>
         </Carousel>

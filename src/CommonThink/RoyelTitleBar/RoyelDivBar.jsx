@@ -9,7 +9,7 @@
 
 export default function RoyelDivBar({p, header, border}) {
     return (
-        <section className="flex justify-center">
+        <section className="flex my-10 justify-center">
             <div className="lg:w-2/6 text-center">
             <h6 className="text-[#D99904] md:text-2xl mb-2">{p}</h6>
             <hr className={`border md:border-2 ${border}`}/>

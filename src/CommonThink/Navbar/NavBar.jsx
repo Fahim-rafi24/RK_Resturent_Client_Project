@@ -5,10 +5,10 @@ import { Link, NavLink } from "react-router-dom";
 export default function NavBar() {
 
     const navIcon = <>
-        <li className="lg:text-white md:mr-2 font-bold xl:text-xl"><NavLink to={'/'}>HOME</NavLink></li>
-        <li className="lg:text-white md:mr-2 font-bold xl:text-xl"><NavLink to={'/contact_us'}>CONTACT US</NavLink></li>
-        <li className="lg:text-white md:mr-2 font-bold xl:text-xl"><NavLink to={'/our_menu'}>OUR MENU</NavLink></li>
-        <li className="lg:text-white md:mr-2 font-bold xl:text-xl"><NavLink to={'/our_shop'}>OUR SHOP</NavLink></li>
+        <li className="md:mr-2 font-bold text-black xl:text-xl"><NavLink to={'/'}>HOME</NavLink></li>
+        <li className="md:mr-2 font-bold text-black xl:text-xl"><NavLink to={'/contact_us'}>CONTACT US</NavLink></li>
+        <li className="md:mr-2 font-bold text-black xl:text-xl"><NavLink to={'/our_menu'}>OUR MENU</NavLink></li>
+        <li className="md:mr-2 font-bold text-black xl:text-xl"><NavLink to={'/our_shop'}>OUR SHOP</NavLink></li>
     </>
 
 
