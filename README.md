@@ -8,3 +8,5 @@ Here use helping Components :-
 03. react-router-dom
 04. react-awesome-button
 05. react-icons
+06. react-responsive-carousel
+07. 

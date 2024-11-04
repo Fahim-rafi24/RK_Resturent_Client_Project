@@ -5,21 +5,21 @@ import { Link, NavLink } from "react-router-dom";
 export default function NavBar() {
 
     const navIcon = <>
-        <li className="p-2 md:p-0 md:mr-2"><NavLink to={'/'}>HOME</NavLink></li>
-        <li className="p-2 md:p-0 md:mr-2"><NavLink to={'/contact_us'}>CONTACT US</NavLink></li>
-        <li className="p-2 md:p-0 md:mr-2"><NavLink to={'/our_menu'}>OUR MENU</NavLink></li>
-        <li className="p-2 md:p-0 md:mr-2"><NavLink to={'/our_shop'}>OUR SHOP</NavLink></li>
+        <li className="lg:text-white md:mr-2 font-bold xl:text-xl"><NavLink to={'/'}>HOME</NavLink></li>
+        <li className="lg:text-white md:mr-2 font-bold xl:text-xl"><NavLink to={'/contact_us'}>CONTACT US</NavLink></li>
+        <li className="lg:text-white md:mr-2 font-bold xl:text-xl"><NavLink to={'/our_menu'}>OUR MENU</NavLink></li>
+        <li className="lg:text-white md:mr-2 font-bold xl:text-xl"><NavLink to={'/our_shop'}>OUR SHOP</NavLink></li>
     </>
 
 
     return (
-        <div className="flex justify-between py-2 md:py-5 md:px-10 bg-base-100">
-            <div className="navbar-start">
+        <div className="fixed z-10 w-full flex justify-between py-2 md:py-5 md:px-10 opacity-100">
+            <div className="navbar-start w-full md:w-fit">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
+                            className="h-5 w-5 text-black"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -37,7 +37,7 @@ export default function NavBar() {
                     </ul>
                 </div>
                 <Link to={'/'}
-                    className="btn btn-ghost text-xl">RK Resturent®️</Link>
+                    className="btn btn-ghost text-base text-purple-400 md:text-4xl">RK Resturent®️</Link>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

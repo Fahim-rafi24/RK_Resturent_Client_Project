@@ -21,3 +21,10 @@
 .cinzel {
     font-family: "Cinzel", serif;
 }
+
+
+/* nav bar active class */
+.active{
+    background-color: rgba(178, 178, 179, 0) !important;
+    color: #1950f6 !important;
+}

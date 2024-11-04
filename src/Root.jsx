@@ -10,7 +10,7 @@ export default function Root() {
         <NavBar></NavBar>
 
         {/* common nasted root */}
-        <section id="dynamic_body" className="flex-grow mb-10 max-w-[1400px]">
+        <section id="dynamic_body" className="flex-grow mb-10">
         <Outlet /> 
         </section>
 
