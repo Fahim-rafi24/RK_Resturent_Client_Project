@@ -1,17 +1,21 @@
+import { Outlet } from "react-router-dom";
+import Footer from "./CommonThink/Footer/Footer";
 import NavBar from "./CommonThink/Navbar/NavBar";
 
 
 export default function Root() {
     return(
-        <section className="inter">
+        <section className="flex flex-col min-h-[100vh] inter">
         {/* nav */}
         <NavBar></NavBar>
 
         {/* common nasted root */}
-        <div className='flex justify-center text-4xl items-center w-full h-[100vh]'>Welcome Here...</div>   
+        <section id="dynamic_body" className="flex-grow mb-10 max-w-[1400px]">
+        <Outlet /> 
+        </section>
 
         {/* footer */}
-        
+        <Footer></Footer>
         </section>
     )
 }
