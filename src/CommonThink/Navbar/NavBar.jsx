@@ -13,7 +13,7 @@ export default function NavBar() {
 
 
     return (
-        <div className="fixed z-10 w-full flex justify-between py-2 md:py-5 md:px-10 opacity-100">
+        <div className="fixed z-10 w-full flex justify-between py-2 md:py-5 md:px-10 bg-[#ffffff1A]">
             <div className="navbar-start w-full md:w-fit">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ export default function NavBar() {
                     </ul>
                 </div>
                 <Link to={'/'}
-                    className="btn btn-ghost text-base font-bold text-purple-400 md:text-4xl cinzel">RK Resturent ®️</Link>
+                    className="btn btn-ghost text-base font-bold text-purple-700 md:text-4xl cinzel">RK Resturent ®️</Link>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
