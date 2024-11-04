@@ -41,5 +41,16 @@
     background-position: center;
     /* Other styles */
     font-family: sans-serif;
-    color: #333;
+}
+
+
+.home_bottom_banner {
+    /* Replace this with the path to your image file    --featured.jpg */
+    background-image: url('./assets/HomeBanner/featured.jpg');
+    /* Other background properties */
+    background-size: cover;
+    background-position: center;
+    /* Other styles */
+    font-family: sans-serif;
+    filter: grayscale(25%);
 }

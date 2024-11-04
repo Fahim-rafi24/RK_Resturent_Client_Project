@@ -29,7 +29,7 @@ export default function Home() {
             <section className="max-w-[1200px] max-h-[572px] md:p-20 mx-2 md:mx-auto shef_hand">
                 <div className="text-black text-center bg-white md:p-14">
                     <h2 className="text-3xl font-bold cinzel">Our Food</h2>
-                    <p className="raleway">Make your way to our Sushi and Kobe beef counter where our finest Master Chefs offer a special Omakase course that gives you the best Japanese culinary masterpiece in the Middle East.The restaurant offers premium seafood coming from the Japanese biggest fish market, Toyosu Market(previously known as Tsukiji Market) and “A5 Kobe beef” (Beef marbling score 12), which is the highest grade wagyu brand in the world.</p>
+                    <p className="raleway">Make your way to our Sushi and Kobe beef counter where our finest Master Chefs offer a special Omakase course that gives you the best Japanese culinary masterpiece in Bangladesh & also all type of FastFood.The restaurant offers premium seafood coming from the Japanese biggest fish market, Toyosu Market(previously known as Tsukiji Market) and “A5 Kobe beef” (Beef marbling score 12), which is the highest grade wagyu brand in the world.</p>
                 </div>
             </section>
             {/* 2th title */}
@@ -44,9 +44,10 @@ export default function Home() {
             {/* Api Call Data */}
 
 
-
             {/* small title */}
+            <div className="flex justify-center">
             <TitleBar p={'View Full  Menu'}></TitleBar>
+            </div>
             {/* call Us Div */}
             <div
                 className="flex justify-center items-center my-20 max-w-[1100px] mx-auto bg-black h-40 text-white text-3xl"
@@ -63,8 +64,13 @@ export default function Home() {
             {/* Api Call Data */}
 
 
+
             {/* BOttom Banner */}
             <HomeBottomBanner></HomeBottomBanner>
+
+
+
+            {/* Api call data  */}
         </>
     )
 }
