@@ -19,6 +19,10 @@ const routerPath = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
+                // loader: () => {
+                //     axiosInstalled
+                //         .post('/food_menu_filter', { category: 'popular' })
+                // }
             },
         ],
     },
