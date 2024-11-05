@@ -28,23 +28,23 @@ export default function HomeSwiper() {
 
                 <SwiperSlide>
                     <img src={slide1} />
-                    <p className='ml-4 text-yellow-400 font-bold text-xl md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Salads</p>
+                    <p className='ml-4 text-black md:text-yellow-400 font-bold text-base md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Salads</p>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide2} />
-                    <p className='ml-4 text-yellow-400 font-bold text-xl md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Pizzas</p>
+                    <p className='ml-4 text-black md:text-yellow-400 font-bold text-base md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Pizzas</p>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide3} />
-                    <p className='ml-4 text-yellow-400 font-bold text-xl md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Soups</p>
+                    <p className='ml-4 text-black md:text-yellow-400 font-bold text-base md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Soups</p>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide4} />
-                    <p className='ml-4 text-yellow-400 font-bold text-xl md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Cakes</p>
+                    <p className='ml-4 text-black md:text-yellow-400 font-bold text-base md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Cakes</p>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide5} />
-                    <p className='ml-4 text-yellow-400 font-bold text-xl md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Salad</p>
+                    <p className='ml-4 text-black md:text-yellow-400 font-bold text-base md:text-2xl lg:text-4xl relative bottom-10 lg:bottom-16'>Salad</p>
                 </SwiperSlide>
             </Swiper>
     )
