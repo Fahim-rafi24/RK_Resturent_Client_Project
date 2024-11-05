@@ -12,3 +12,5 @@ Here use helping Components :-
 07. swiper-js
 08. axios
 09. @smastrom/react-rating
+10. simple-parallax-js
+11. 
