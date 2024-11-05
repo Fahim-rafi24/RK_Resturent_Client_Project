@@ -19,7 +19,7 @@ export default function Home() {
     useEffect(() => {
         // axios call
         axiosInstalled
-            .post('/food_menu_filter', { category: 'popular' })
+            .post('/food_menu/7', { category: 'popular' })
             .then(res => setPopular(res.data))
     }, [])
 
@@ -66,7 +66,7 @@ export default function Home() {
 
             {/* small title */}
             <div className="flex justify-center">
-                <TitleBar p={'View Full  Menu'}></TitleBar>
+                <TitleBar p={'View Full  Menu'} link={'/our_menu'}></TitleBar>
             </div>
 
             {/* call Us Div */}

@@ -4,6 +4,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Form/Login/Login";
 import Register from "../Pages/Form/Register/Register";
+import OurMenu from "../Pages/OurManu/OurMenu";
 
 
 
@@ -19,10 +20,10 @@ const routerPath = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                // loader: () => {
-                //     axiosInstalled
-                //         .post('/food_menu_filter', { category: 'popular' })
-                // }
+            },
+            {
+                path: "/our_menu",
+                element: <OurMenu></OurMenu>,
             },
         ],
     },

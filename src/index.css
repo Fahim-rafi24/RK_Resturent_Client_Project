@@ -58,3 +58,13 @@
     /* Replace this with the path to your image file    --featured.jpg */
     background-image: url('./assets/Form.png');
 }
+
+
+/* menu banner bg seting */
+#menu_Banner{
+    background-image: url("../src/assets/Menu/banner3.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
