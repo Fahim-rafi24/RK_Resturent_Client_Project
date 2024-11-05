@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import FormBody from "../FormBody";
 
 
@@ -8,6 +9,10 @@ export default function Register() {
         e.preventDefault();
     }
     return (
+        <>
+        <Helmet>
+                <title>RK Resturent ®️ || Sign Up</title>
+            </Helmet>
         <FormBody item_patan={''} path={'register'}>
             {/* children Part */}
             <form
@@ -35,5 +40,6 @@ export default function Register() {
             </form>
             {/* children Part End */}
         </FormBody>
+        </>
     )
 }

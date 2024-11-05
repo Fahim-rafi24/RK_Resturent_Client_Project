@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import { axiosInstalled } from "../../Axios/Axios";
 import FoodList from "../../Components/FoodList/FoodList";
 import Comment from "../../Components/Comment/Comment";
-
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -26,6 +26,9 @@ export default function Home() {
 
     return (
         <>
+            <Helmet>
+                <title>RK Resturent ®️ || Home</title>
+            </Helmet>
             {/* banner */}
             <HomeBanner></HomeBanner>
 

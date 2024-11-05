@@ -41,7 +41,9 @@
     background-position: center;
 }
 
-
+.z-custom{
+    z-index: 0 !important;
+}
 .home_bottom_banner {
     /* Replace this with the path to your image file    --featured.jpg */
     background-image: url('./assets/HomeBanner/featured.jpg');

@@ -5,6 +5,7 @@ import CommonBanner from "../../Components/Banner/CommonBanner";
 import FoodList from "../../Components/FoodList/FoodList";
 import { ShefHand } from "../../CommonThink/ShefHand/ShefHands";
 import TitleBar from "../../CommonThink/TitleBar/TitleBar";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -39,6 +40,9 @@ export default function OurMenu() {
 
     return (
         <>
+            <Helmet>
+                <title>RK Resturent ®️ || Menu</title>
+            </Helmet>
             {/* menu banner section */}
             <CommonBanner
                 bgImg={'menu_Banner'}
