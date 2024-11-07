@@ -6,6 +6,7 @@ import FoodList from "../../Components/FoodList/FoodList";
 import { ShefHand } from "../../CommonThink/ShefHand/ShefHands";
 import TitleBar from "../../CommonThink/TitleBar/TitleBar";
 import { Helmet } from "react-helmet-async";
+// 
 
 
 
@@ -18,22 +19,22 @@ export default function OurMenu() {
     useEffect(() => {
         // axios call for DESSERTS
         axiosInstalled
-            .post('/food_menu/5', { category: 'dessert' })
+            .post('/food_menu/20', { category: 'dessert' })
             .then(res => setDesserts(res.data));
 
         // axios call for PIZZAS
         axiosInstalled
-            .post('/food_menu/6', { category: 'pizza' })
+            .post('/food_menu/20', { category: 'pizza' })
             .then(res => setPizzas(res.data));
 
         // axios call for SALADS
         axiosInstalled
-            .post('/food_menu/4', { category: 'salad' })
+            .post('/food_menu/20', { category: 'salad' })
             .then(res => setSalads(res.data));
 
         // axios call for SOUPS
         axiosInstalled
-            .post('/food_menu/7', { category: 'soup' })
+            .post('/food_menu/20', { category: 'soup' })
             .then(res => setSoups(res.data));
     }, [])
 
@@ -64,7 +65,7 @@ export default function OurMenu() {
             {/* info div shef hand */}
             <ShefHand
                 h={'DESSERTS'}
-                p={'From easy chocolate self-saucing pudding to kid-friendly jelly slice, these are the top 50 best dessert available for you.'}></ShefHand>
+                p={'From easy chocolate self-saucing pudding to kid-friendly jelly slice, these are the top 50 best dessert available for you.'} img={'cover1'}></ShefHand>
 
             {/* api data */}
             <div className="grid md:grid-cols-2 gap-10 py-10 max-w-[1100px] px-5 mx-auto">
@@ -81,7 +82,7 @@ export default function OurMenu() {
             {/* info div shef hand */}
             <ShefHand
                 h={'PIZZA'}
-                p={'While Italy is the home of pizza, countries across the globe have followed suit . So we also try to provide the Best pizza moment for you.'}></ShefHand>
+                p={'While Italy is the home of pizza, countries across the globe have followed suit . So we also try to provide the Best pizza moment for you.'} img={'cover2'}></ShefHand>
 
             {/* api data */}
             <div className="grid md:grid-cols-2 gap-10 py-10 max-w-[1100px] px-5 mx-auto">
@@ -98,7 +99,7 @@ export default function OurMenu() {
             {/* info div shef hand */}
             <ShefHand
                 h={'SALADS'}
-                p={"Meals like… salads! We've put together all best salad for you."}></ShefHand>
+                p={"Meals like… salads! We've put together all best salad for you."} img={'cover3'}></ShefHand>
 
             {/* api data */}
             <div className="grid md:grid-cols-2 gap-10 py-10 max-w-[1100px] px-5 mx-auto">
@@ -115,7 +116,7 @@ export default function OurMenu() {
             {/* info div shef hand */}
             <ShefHand
                 h={'SOUPS'}
-                p={"Hay, Soup Lover. We came make the best Deal for You."}></ShefHand>
+                p={"Hay, Soup Lover. We came make the best Deal for You."} img={'cover4'}></ShefHand>
 
             {/* api data */}
             <div className="grid md:grid-cols-2 gap-10 py-10 max-w-[1100px] px-5 mx-auto">

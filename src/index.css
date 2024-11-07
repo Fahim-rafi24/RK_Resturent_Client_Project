@@ -29,9 +29,6 @@
     color: #1950f6 !important;
 }
 
-
-
-
 /* shef_hand bg Img */
 .shef_hand {
     /* Replace this with the path to your image file */
@@ -40,10 +37,36 @@
     background-size: cover;
     background-position: center;
 }
-
-.z-custom{
-    z-index: 0 !important;
+.cover1 {
+    /* Replace this with the path to your image file */
+    background-image: url('./assets/Menu/dessert-bg.jpg');
+    /* Other background properties */
+    background-size: cover;
+    background-position: center;
 }
+.cover2 {
+    /* Replace this with the path to your image file */
+    background-image: url('./assets/Menu/pizza-bg.jpg');
+    /* Other background properties */
+    background-size: cover;
+    background-position: center;
+}
+.cover3 {
+    /* Replace this with the path to your image file */
+    background-image: url('./assets/Menu/salad-bg.jpg');
+    /* Other background properties */
+    background-size: cover;
+    background-position: center;
+}
+.cover4 {
+    /* Replace this with the path to your image file */
+    background-image: url('./assets/Menu/soup-bg.jpg');
+    /* Other background properties */
+    background-size: cover;
+    background-position: center;
+}
+
+
 .home_bottom_banner {
     /* Replace this with the path to your image file    --featured.jpg */
     background-image: url('./assets/HomeBanner/featured.jpg');
@@ -53,14 +76,11 @@
     filter: grayscale(25%);
 }
 
-
-
 /* form Img */
 .formBg {
     /* Replace this with the path to your image file    --featured.jpg */
     background-image: url('./assets/Form.png');
 }
-
 
 /* menu banner bg seting */
 #menu_Banner{
@@ -70,3 +90,24 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+/* Contact us banner bg seting */
+#contact_us{
+    background-image: url("./assets/Contact/banner.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#shop_banner{
+    background-image: url("./assets/OurShop/banner.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Hides scrollbar for Firefox */
+.scrollbar-hide {
+    scrollbar-width: none;
+  }

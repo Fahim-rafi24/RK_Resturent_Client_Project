@@ -10,17 +10,32 @@ import { axiosInstalled } from "../../Axios/Axios";
 import FoodList from "../../Components/FoodList/FoodList";
 import Comment from "../../Components/Comment/Comment";
 import { Helmet } from "react-helmet-async";
+import ItemCard from "../../CommonThink/ItemCard/ItemCard";
+import ConformItem from "../../Components/ConformItem/ConformItem";
 
 
 
 export default function Home() {
     const [popular, setPopular] = useState([]);
+    const [recommends, setRecommends] = useState([]);
+
+    // for conform card in dashbord
+    const [conformCard, setConformCard] = useState(false);
+    const [targetedID, setTargetedID] = useState(null);
+    function handleCard (id){
+        setTargetedID(id)
+        setConformCard(!conformCard)
+    }
 
     useEffect(() => {
         // axios call
         axiosInstalled
             .post('/food_menu/7', { category: 'popular' })
             .then(res => setPopular(res.data))
+        // axios call
+        axiosInstalled
+            .post('/food_menu/7', { category: 'offered' })
+            .then(res => setRecommends(res.data))
     }, [])
 
 
@@ -84,7 +99,13 @@ export default function Home() {
                 border={''}>
             </RoyelDivBar>
 
-            {/* Api Call Data */}
+            {/* offered Item */}
+            <div className="p-5 w-full lg:w-[80%] grid md:grid-cols-2 xl:grid-cols-3 py-10 gap-7 mx-auto">
+            {
+                recommends.map(each => <ItemCard key={each._id} card={each} state={handleCard}></ItemCard>)
+            }
+            </div>
+                {conformCard && <ConformItem id={targetedID}></ConformItem>}
 
 
             {/* BOttom Banner */}

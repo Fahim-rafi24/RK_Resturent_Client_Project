@@ -23,8 +23,8 @@ export default function FormBody({ item_patan, children, path}) {
 
     return (
         <section className="min-h-[100vh] formBg p-5 md:p-20">
-            <div className={`border shadow-2xl min-h-[85vh] md:flex ${item_patan}`}>
-                <div className="w-full md:w-[50%] flex flex-col justify-center items-center mt-16 md:mt-0">
+            <div className={`border shadow-2xl min-h-[85vh] lg:flex ${item_patan}`}>
+                <div className="w-full lg:w-[50%] flex flex-col justify-center items-center mt-16 md:mt-0">
                     {children}
                     <p className="text-[#D1A054] w-[95%] md:w-[80%] pl-5">{p}<span> </span>
                         <Link to={link} className="font-bold">{go}</Link>
@@ -37,7 +37,7 @@ export default function FormBody({ item_patan, children, path}) {
                     </div>
                 </div>
                 {/* img section */}
-                <div className="w-full md:w-[50%] flex justify-center items-center">
+                <div className="w-full lg:w-[50%] flex justify-center items-center">
                     <img src={authenticationImg} className="w-fit h-fit" />
                 </div>
             </div>

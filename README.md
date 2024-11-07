@@ -14,3 +14,4 @@ Here use helping Components :-
 09. @smastrom/react-rating
 10. simple-parallax-js
 11. react-helmet-async
+12. react-parallax-tilt

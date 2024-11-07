@@ -5,8 +5,10 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/Form/Login/Login";
 import Register from "../Pages/Form/Register/Register";
 import OurMenu from "../Pages/OurManu/OurMenu";
-
-
+import ContactUs from "../Pages/ContactUs/ContactUs";
+import OurShop from "../Pages/OurShop/OurShop";
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import PrivateRoot from "../PrivateRoot/PrivateRoot";
 
 
 
@@ -22,8 +24,20 @@ const routerPath = createBrowserRouter([
                 element: <Home></Home>,
             },
             {
+                path: "/contact_us",
+                element: <PrivateRoot><ContactUs></ContactUs></PrivateRoot>,  // private page
+            },
+            {
                 path: "/our_menu",
                 element: <OurMenu></OurMenu>,
+            },
+            {
+                path: "/our_shop",
+                element: <OurShop></OurShop>,
+            },
+            {
+                path: "/dashboard",
+                element: <PrivateRoot><Dashboard></Dashboard></PrivateRoot>,  // private page
             },
         ],
     },
