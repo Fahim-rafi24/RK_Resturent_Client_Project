@@ -1,11 +1,20 @@
 import { Outlet } from "react-router-dom";
 import Footer from "./CommonThink/Footer/Footer";
 import NavBar from "./CommonThink/Navbar/NavBar";
+import gsap from "gsap";
+
+
+gsap.to('#root_Area', {
+    scrollTrigger: '.box', // start the animation when ".box" enters the viewport (once)
+    x: 100
+});
+
+
 
 
 export default function Root() {
     return(
-        <section className="flex flex-col min-h-[100vh] inter">
+        <section id="root_Area" className="flex flex-col min-h-[100vh] inter">
         {/* nav */}
         <NavBar></NavBar>
 

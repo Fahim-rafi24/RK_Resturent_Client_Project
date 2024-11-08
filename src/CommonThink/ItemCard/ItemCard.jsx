@@ -2,6 +2,7 @@
 
 import { useContext } from "react"
 import { userStatusContext } from "../../AuthContext/AuthContext"
+import { Link } from "react-router-dom";
 
 
 const ItemCard = ({ card, state }) => {
@@ -26,7 +27,7 @@ const ItemCard = ({ card, state }) => {
                         currentUser.user && <button onClick={()=>state(card._id)} className="btn text-[#BB8506] hover:bg-gray-800">Add To cards</button>
                     }
                     {
-                      !currentUser.user && <button onClick={()=>state(card._id)} className="btn text-[#BB8506] hover:bg-gray-800" disabled>Log In First</button>
+                      !currentUser.user && <Link to={'/login'} className="btn text-[#BB8506] hover:bg-gray-800">Log In First</Link>
                     }
                 </div>
             </div>

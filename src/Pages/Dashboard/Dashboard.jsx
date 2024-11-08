@@ -15,7 +15,7 @@ const Dashboard = () => {
     return (
         <>
             <Helmet>
-                <title>RK Resturent ®️ || Card</title>
+                <title>RK Resturent ®️ || Admin Dashboard</title>
             </Helmet>
             <section className="border mt-14 md:mt-20 md:m-10 lg:m-32">
                 fdsofw

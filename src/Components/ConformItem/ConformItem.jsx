@@ -7,7 +7,12 @@ import { useNavigate } from "react-router-dom";
 const ConformItem = ({ id }) => {
     const currentUser = useContext(userStatusContext);
     // const [savedData, setdata] = useState({});
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
+    useEffect(()=>{
+        // if (!currentUser) {
+        //     return;
+        // }
+    },[])
 
     // button No
     const handleNoBtn = () => {
