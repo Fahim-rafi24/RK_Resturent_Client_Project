@@ -4,6 +4,7 @@ import authenticationImg from "../../assets/authentication.png"
 import { FaFacebookF } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { IoHome } from "react-icons/io5";
 
 
 export default function FormBody({ item_patan, children, path}) {
@@ -34,6 +35,7 @@ export default function FormBody({ item_patan, children, path}) {
                     <FaFacebookF className="p-2 rounded-full border-2"/>
                     <FaGoogle className="p-2 rounded-full border-2"/>
                     <FaGithub className="p-2 rounded-full border-2"/>
+                    <Link to={'/'}><IoHome className="p-2 rounded-full border-2"/></Link>
                     </div>
                 </div>
                 {/* img section */}

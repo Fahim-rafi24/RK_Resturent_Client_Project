@@ -9,6 +9,8 @@ import ContactUs from "../Pages/ContactUs/ContactUs";
 import OurShop from "../Pages/OurShop/OurShop";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import PrivateRoot from "../PrivateRoot/PrivateRoot";
+import AdminDashBoard from "../Pages/Dashboard/AdminDashboard/AdminDashboard";
+import Users from "../Pages/Dashboard/AdminDashboard/pages/Users";
 
 
 
@@ -37,7 +39,7 @@ const routerPath = createBrowserRouter([
             },
             {
                 path: "/dashboard",
-                element: <Dashboard></Dashboard>,  // private page
+                element: <PrivateRoot><Dashboard></Dashboard></PrivateRoot>,  // private page
             },
         ],
     },
@@ -48,6 +50,16 @@ const routerPath = createBrowserRouter([
     {
         path: "/register",
         element: <Register></Register>,
+    },
+    {
+        path: "/admin/dashboard",
+        element: <AdminDashBoard></AdminDashBoard>,
+        children: [
+            {
+                path: '/admin/dashboard',
+                element: <Users></Users>,
+            }
+        ],
     },
 ]);
 
