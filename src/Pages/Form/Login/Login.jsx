@@ -27,9 +27,6 @@ export default function Login() {
         else {
             signInWithEmailAndPassword(auth, email, password)
                 .then(res => {
-                    {
-                        redirectPath ? navigate(`${redirectPath}`) : navigate('/')
-                    }
                     Swal.fire({
                         position: "top-end",
                         icon: "success",
@@ -37,6 +34,9 @@ export default function Login() {
                         showConfirmButton: false,
                         timer: 2500
                     });
+                    {
+                        redirectPath ? navigate(`${redirectPath}`) : navigate('/')
+                    }
                 })
                 .catch((error) => {
                     console.log(error);

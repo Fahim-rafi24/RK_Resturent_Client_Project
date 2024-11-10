@@ -1,5 +1,4 @@
 import queationImg from "../../assets/HomeBanner/quotation.jpg"
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';

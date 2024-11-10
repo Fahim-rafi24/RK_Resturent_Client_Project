@@ -45,15 +45,6 @@ const ConformItem = ({ id }) => {
                         return window.location.reload();
                     })
             });
-        // post data in card library db
-        // axiosInstalled
-        // .post(`/user_card_add`, postData)
-        // .then(res => {
-        // if(res.statusText === "OK"){
-        // go to page
-        // window.location.reload();
-        // }
-        // })
     }
 
     return (

@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react"
-import { createUserWithEmailAndPassword, onAuthStateChanged, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
 import { auth } from "../Auth/firebase.config";
 import Swal from "sweetalert2";
 // import { useNavigate } from "react-router-dom";
@@ -16,7 +16,7 @@ const AuthContext = ({ children }) => {
     const [isLoading, setIsLoading] = useState(false);
     // jwt Token status
     const [jwtToken, setJwtToken] = useState(null); // TODO : item for future
-    
+
 
     // remove token from cookies
     const removedJwtTokenFunc = () => {
@@ -28,7 +28,7 @@ const AuthContext = ({ children }) => {
     }
 
     // useEffect
-    useEffect(() => {     // call for current user
+    useEffect(() => {   // call for current user
         onAuthStateChanged(auth, async (currentUser) => {
             if (currentUser?.email) {
                 // axios call
@@ -48,6 +48,9 @@ const AuthContext = ({ children }) => {
         })
     }, [user])
 
+
+
+
     const handleSignInUser = async (email, password) => {  // call for Register user
         return await createUserWithEmailAndPassword(auth, email, password);
     }
@@ -57,12 +60,16 @@ const AuthContext = ({ children }) => {
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "Sign Out Successfull. Log In Later.",
+                    title: "Sign Out Successfull.",
                     showConfirmButton: false,
                     timer: 2500
                 });
                 removedJwtTokenFunc();
             })
+    }
+    const googleProvider = new GoogleAuthProvider();
+    const handleGooglelogIn = async () => {
+        return signInWithPopup(auth, googleProvider);
     }
 
     // store RedirectPath in state
@@ -70,6 +77,7 @@ const AuthContext = ({ children }) => {
     const result = {
         user,
         handleSignInUser,
+        handleGooglelogIn,
         handleSignOut,
         isLoading,
         setIsLoading,

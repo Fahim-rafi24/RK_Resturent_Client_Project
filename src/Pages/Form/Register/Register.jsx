@@ -7,8 +7,6 @@ import { axiosInstalled } from "../../../Axios/Axios";
 import Swal from "sweetalert2";
 
 
-
-
 export default function Register() {
     const [errorText, setError] = useState('');
     const { handleSignInUser, redirectPath } = useContext(userStatusContext);
@@ -30,31 +28,29 @@ export default function Register() {
                 return setError('Please Provide Your Password');
             }
             else {
-                // post data with axios call
-                axiosInstalled
-                    .post('/user', { name, email, password })
-                    .then((userData) => {
-                        if (userData.data.status === "successfull") {
-                            // post data for sending Email
-                            handleSignInUser(email, password)
-                                .then((result) => {
-                                    if (result.operationType === 'signIn') {
-                                        // this link need mush be dinamic
-                                        {
-                                            redirectPath ? navigate(`${redirectPath}`) : navigate('/')
-                                        }
+                // post data for sending Email
+                handleSignInUser(email, password)
+                    .then((result) => {
+                        if (result.operationType === 'signIn') {
+                            // post data with axios call
+                            axiosInstalled
+                                .post('/user', { name, email })
+                                .then(res => {
+                                    if (res.data.status === "successfull") {
                                         Swal.fire({
                                             position: "top-end",
                                             icon: "success",
-                                            title: "Sign In Successfull",
+                                            title: "Log In Successfull",
                                             showConfirmButton: false,
                                             timer: 2500
                                         });
+                                        {
+                                            redirectPath ? navigate(`${redirectPath}`) : navigate('/')
+                                        }
                                     }
                                 })
                         }
                     })
-                // give user a sweet alart
                 form.reset();
             }
         }
